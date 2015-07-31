@@ -1,1 +1,1 @@
-# User Environment Configuration
+# Environment Configuration
