@@ -1,2 +1,1 @@
-# config
-Environment configuration
+# User Environment Configuration
