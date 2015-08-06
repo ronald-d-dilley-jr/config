@@ -1,3 +1,10 @@
 
+# ls
+alias ls='/bin/ls --color=tty'
 alias cls='clear;ls'
+
+# Subversion
+alias svncram='svn status | grep "^[CRAM]"'
+alias scram='svn status | grep "^[A-Z ][ M]"'
+alias svnpei='svn propedit svn:ignore'
 
