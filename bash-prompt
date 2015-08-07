@@ -1,0 +1,14 @@
+
+#colored_sys="\033[38;5;124m${SYS}\033[0m"
+#colored_host="\033[38;5;124m\h\033[0m"
+#colored_dir="\033[38;5;25m\$PWD\033[0m"
+#colored_time="\033[38;5;25m\t\033[0m"
+#PS1="[$colored_host $colored_dir]\n[$colored_time]> "
+
+#export AA_P="export PVE=\"[\\033[m\\033[38;5;208m\"\$(( \`sed -n \"s/MemFree:[\\t ]\\+\\([0-9]\\+\\) kB/\\1/p\" /proc/meminfo\` / 1024 ))\"\\033[38;5;208m/\"\$((\`sed -n \"s/MemTotal:[\\t ]\\+\\([0-9]\\+\\) kB/\\1/p\" /proc/meminfo\`/ 1024 ))MB\"\\033[m] \\033[m[\\033[38;5;88m\$(< /proc/loadavg)\\033[m]\";echo -en \"\"" \
+
+#export PS1='[\[\e[38;5;208m\]`echo "$((\`sed -n "s/MemFree:[\t ]\+\([0-9]\+\) kB/\1/p" /proc/meminfo\` / 1024))" | sed -n "s/\([0-9]\+\)/\1/p"`\[\e[0m\]/\[\e[38;5;208m\]`echo "$((\`sed -n "s/MemTotal:[\t ]\+\([0-9]\+\) kB/\1/p" /proc/meminfo\` / 1024))" | sed -n "s/\([0-9]\+\)/\1/p"`MB\[\e[0m\]]
+#[\[\e[38;5;20m\]\h $PWD\[\e[0m\]]
+#[\[\e[38;5;220m\]\t\[\e[0m\]]>'
+export PS1='[\[\e[38;5;25m\]\h $PWD\[\e[0m\]]
+[\[\e[38;5;228m\]\t\[\e[0m\]]>'
