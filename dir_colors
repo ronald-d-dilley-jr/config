@@ -79,9 +79,10 @@ EIGHTBIT 1
 # Background color codes:
 # 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
 #NORMAL 00	# no color code at all
-#FILE 00	# normal file, use no color at all
 RESET 0 # reset to "normal" color
-DIR 01;34	# directory
+FILE 00;2	# normal file, use no color at all
+#DIR 01;34	# directory
+DIR 38;5;25	# directory
 LINK 01;36	# symbolic link (If you set this to 'target' instead of a
 		# numerical value, the color is as for the file pointed to.)
 MULTIHARDLINK 00	# regular file with more than one link
@@ -115,8 +116,6 @@ EXEC 01;32
 #.csh 01;32
 
 # archives or compressed (bright red)
-.tar 01;31
-.tgz 01;31
 .arc 01;31
 .arj 01;31
 .taz 01;31
@@ -124,23 +123,33 @@ EXEC 01;32
 .lzh 01;31
 .lzma 01;31
 .tlz 01;31
-.txz 01;31
 .tzo 01;31
 .t7z 01;31
-.zip 01;31
-.z   01;31
-.Z   01;31
 .dz  01;31
-.gz  01;31
 .lrz 01;31
 .lz  01;31
 .lzo 01;31
-.xz  01;31
-.bz2 01;31
-.bz  01;31
-.tbz 01;31
-.tbz2 01;31
-.tz  01;31
+
+.bz  38;5;125
+.tbz  38;5;125
+
+.gz  38;5;125
+.tgz 38;5;125
+
+.bz2  38;5;125
+.tbz2  38;5;125
+
+.tar 38;5;125
+
+.xz  38;5;125
+.txz  38;5;125
+
+.z  38;5;125
+.tz  38;5;125
+
+.Z  38;5;125
+.zip  38;5;125
+
 .deb 01;31
 .rpm 01;31
 .jar 01;31
@@ -227,6 +236,19 @@ EXEC 01;32
 .spx 01;36
 .xspf 01;36
 
+# colorize source code
+.c 38;5;208
+.cpp 38;5;208
+.f 38;5;114
+.pl 38;5;208
+.py 38;5;208
+.java 38;5;208
+.json 38;5;117
+.odl 38;5;90
+.omf 38;5;90
+.h 38;5;214
+.o 38;5;238
+
 # colorize binary documents (brown)
 #.pdf 00;33
 #.ps 00;33
@@ -247,7 +269,7 @@ EXEC 01;32
 #.wpd 00;33
 #
 # colorize text documents (brown)
-#.txt 00;33
+#.txt 38;5;33
 #.patch 00;33
 #.diff 00;33
 #.log 00;33
