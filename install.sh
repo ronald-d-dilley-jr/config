@@ -1,6 +1,6 @@
 
-cp gvimrc ~/.gvimrc
+ln -sf `pwd`/bash-aliases ~/bash-aliases
+ln -sf `pwd`/bash-prompt ~/bash-prompt
 
-cp bash-aliases ~
-cp bash-colors ~
+ln -sf `pwd`/dir-colors ~/.dir_colors
 
