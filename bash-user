@@ -4,7 +4,7 @@
 # gtk applications
 unset GTK_MODULES
 
-export PATH=$HOME'/dev-tools/git/bin':$PATH
+export PATH=$HOME'/dev-tools/bin':$PATH
 export PATH=$HOME'/my-scripts':$PATH
 
 # Turn off the stupid gpg-agent
