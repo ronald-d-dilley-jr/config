@@ -16,7 +16,7 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
+HISTSIZE=100
 HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
@@ -59,4 +59,9 @@ fi
 # Prompt
 if [ -f ~/.bash-prompt ]; then
     . ~/.bash-prompt
+fi
+
+# L2PGS
+if [ -f ~/.bash-l2pgs ]; then
+    . ~/.bash-l2pgs
 fi

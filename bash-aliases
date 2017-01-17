@@ -14,3 +14,5 @@ alias cls='clear;ls'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+alias git-hash='git show-ref'

@@ -4,7 +4,14 @@
 # gtk applications
 unset GTK_MODULES
 
-export PATH=$HOME'/dev-tools/bin':$PATH
+set -o vi
+
+
+if [ -v $RDD_PATH ]; then
+    export RDD_PATH=$PATH
+fi
+
+export PATH=$HOME'/dev-tools/bin':$RDD_PATH
 export PATH=$HOME'/my-scripts':$PATH
 
 # Turn off the stupid gpg-agent
@@ -19,3 +26,5 @@ export PYTHONDONTWRITEBYTECODE=1
 export PERL5LIB=$HOME/lsrd-src/git/perl
 
 unset SSH_ASKPASS
+
+#source $HOME/python-env/bin/activate
