@@ -5,5 +5,5 @@
 ## Installation
 Use at your own risk....
 ```
-./install.sh
+ansible-playbook install-playbook.yml
 ```

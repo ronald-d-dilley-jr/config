@@ -1,0 +1,47 @@
+# install-playbook.yml
+
+---
+  - hosts: localhost
+
+    tasks:
+
+    - name: Backup .bashrc
+      command: cp ~/.bashrc ~/.bashrc.backup
+      changed_when: false
+
+    - name: Install .bashrc
+      command: cp bashrc ~/.bashrc
+      changed_when: false
+
+    - name: Backup .bash-prompt
+      command: cp ~/.bash-prompt ~/.bash-prompt.backup
+      changed_when: false
+
+    - name: Install .bash-prompt
+      command: cp bash-prompt ~/.bash-prompt
+      changed_when: false
+
+    - name: Backup .bash-aliases
+      command: cp ~/.bash-aliases ~/.bash-aliases.backup
+      changed_when: false
+
+    - name: Install .bash-aliases
+      command: cp bash-aliases ~/.bash-aliases
+      changed_when: false
+
+    - name: Backup .bash-user
+      command: cp ~/.bash-user ~/.bash-user.backup
+      changed_when: false
+
+    - name: Install .bash-user
+      command: cp bash-user ~/.bash-user
+      changed_when: false
+
+    - name: Backup .tmux.conf
+      command: cp ~/.tmux.conf ~/.tmux.conf.backup
+      changed_when: false
+
+    - name: Install .tmux.conf
+      command: cp tmux.conf ~/.tmux.conf
+      changed_when: false
+

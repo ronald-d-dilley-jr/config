@@ -16,3 +16,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias git-hash='git show-ref'
+
+alias t-ls='tmux list-sessions'
+alias t-ns='tmux new-session -t'
+alias t-as='tmux attach-session -t'
